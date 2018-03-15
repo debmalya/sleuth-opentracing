@@ -41,3 +41,9 @@ public Object around(ProceedingJoinPoint jp) {
     return result;
 }
 ```
+
+#### How to install as local jar
+mvn install:install-file -Dfile=<path-to-file> -DgroupId=<group-id> -DartifactId=<artifact-id> -Dversion=<version> -Dpackaging=<packaging> -DgeneratePom=true
+```
+mvn install:install-file -Dfile=.\target\spring-boot-starter-sleuth-opentracing-0.0.1-SNAPSHOT.jar -DgroupId=io.opentracing.contrib -DartifactId=sleuth-opentracing-parent -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true    
+```
